@@ -67,7 +67,7 @@ class Inventory:
     def update_quantity(self, name, quantity):
         if name not in self._products:
             return f"Product {name} was not found"
-        self._products[name].quantity = int(quantity)
+        self._products[name].quantity = int(quantity)+1
         return f"Product {name} updated to quantity {quantity}"
 
     # ---- Feature 4: Remove a product ----------------------------------
